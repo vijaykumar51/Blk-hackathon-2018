@@ -109,3 +109,17 @@
   border-bottom:1px solid #ccc;
 }
 
+.fa.header-icons {
+  font-size:26px;
+  color:#fff;
+}
+
+.fa.header-icons:hover {
+  font-size:26px;
+  color:#bbb;
+}
+
+.brand {
+  padding-left:15px;
+}
+

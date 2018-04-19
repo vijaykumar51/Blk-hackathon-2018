@@ -1,0 +1,21 @@
+.activity-card-holder {
+  width:80%;
+  margin:20px auto 100px;
+  border:2px solid #ccc;
+  /*border-radius:20px;*/
+  /*box-shadow:5px 5px 5px 5px;*/
+}
+
+.activity-card-holder .intro p {
+  line-height:1;
+}
+
+.activity-card-holder .intro h2 {
+  margin-bottom:10px;
+  padding-top:10px;
+}
+
+.team-grid .row.people {
+  padding:20px;
+}
+
