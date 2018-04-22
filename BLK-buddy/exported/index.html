@@ -11,25 +11,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="assets/css/Navigation-e-commerce.css">
     <link rel="stylesheet" href="assets/css/Navigation-with-Search.css">
+    <link rel="stylesheet" href="assets/css/Profile-Picture-With-Badge.css">
+    <link rel="stylesheet" href="assets/css/Profile-Picture-With-Badge.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/Team-Boxed.css">
     <link rel="stylesheet" href="assets/css/Team-Grid.css">
+    <link rel="stylesheet" href="assets/css/Toggle-Switch.css">
+    <link rel="stylesheet" href="assets/css/Toggle-Switch.css">
 </head>
 
 <body style="background-color:rgb(255,255,255);">
     <div style="position:fixed;top:0;width:100%;z-index:10000;">
-        <nav class="navbar navbar-light navbar-expand-md" style="color:rgb(255,255,255);background-color:#3e454c;">
+        <nav class="navbar navbar-light navbar-expand-md" style="color:rgb(255,255,255);background-color:#013243;">
             <div class="container"><a class="navbar-brand" href="#" style="color:rgb(255,255,255);"><i class="fa fa-star fa-users header-icons"></i><span class="brand">BLK Buddies</span></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div
                     class="collapse navbar-collapse" id="navcol-1">
                     <form class="form-inline navbar-left">
-                        <div class="input-group"><span id="basic-addon1" class="input-group-addon"><i class="fa fa-search" style="margin-top:15px;height:16px;margin-left:22px;width:15px;font-size:18px;"></i></span><input class="form-control form-control-lg" type="text" placeholder="Search..."
-                                aria-describedby="basic-addon1" style="background-color:rgb(62,69,76);color:rgb(255,255,255);border:0px;/*outline:none;*/"></div>
+                        <div class="input-group"><span id="basic-addon1" class="input-group-addon" style="position:relative;z-index:100;padding-left:10px;"><i class="fa fa-search" style="margin-top:15px;height:16px;margin-left:22px;width:15px;font-size:18px;"></i></span>
+                            <input
+                                class="form-control form-control-lg" type="text" placeholder="Search..." aria-describedby="basic-addon1" style="background-color:rgb(62,69,76);color:rgb(255,255,255);border:0px;border-radius:0px;margin-left:-20px;padding-left:40px;"></div>
                     </form>
                     <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item" role="presentation"><a class="nav-link active" href="#" style="color:#fff;">First Item</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color:#ccc;">Second Item</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link fas fas-cog" href="#" style="color:#ccc;"><i class="fa fa-star fa-cog header-icons"></i></a></li>
+                        <li class="nav-item sr-only visible" role="presentation"><a class="nav-link active" href="#" style="color:#fff;">First Item</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link fas fas-cog" href="#" style="color:#ccc;"><i class="fa fa-star sr-only fa-cog header-icons"></i></a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link fas fas-cog" href="#" style="color:#ccc;"><i class="fa fa-star fa-user-circle header-icons"></i></a></li>
                     </ul>
             </div>
@@ -69,8 +73,8 @@
             </div>
         </div>
     </div>
-    <div>
-        <div class="activity-card-holder"><div class="team-grid" style="margin-bottom:30px;">
+    <div id="recommendedActivity" style="padding:30px 80px 10px;background-color:#03c9a9;">
+        <div class="activity-card-holder"><div class="team-grid">
     <div class="container">
         <div class="intro">
             <h2 class="text-center" >Recommended Activity</h2>
@@ -110,6 +114,48 @@
         <div class="d-flex justify-content-center intro"><button class="btn btn-success btn-lg" type="button" style="padding:10px 50px;">Acknowledge</button></div>
     </div>
 </div></div>
+    </div>
+    <div id="profileOverlayContainer">
+        <div id="profileContainer" style="/*height:500px;*//*background:#248;*/">
+            <div id="profilePictureContainer" style="background:#013243;">
+        <div class="profile-header-container">   
+            <span id="profileOverlayClose" class="fa fa-close"></span>
+    		<div class="profile-header-img">
+                <img class="img-circle" src="assets/img/profile-picture.jpg" />
+                <div class="rank-label-container">
+                    <span class="label label-default rank-label">100 points</span>
+                </div>
+            </div>
+        </div> 
+</div>
+            <div id="userDetailsContainer" style="background:#fff;">
+                <div class="table-responsive" id="userDetails" style="padding:50px;">
+                    <table class="table">
+                        <thead>
+                            <tr></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Total Collaborations</td>
+                                <td>14</td>
+                            </tr>
+                            <tr>
+                                <td>Activity Collaborations</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>Individual Collaborations</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>Suggestions ignored</td>
+                                <td>4</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
